@@ -38,14 +38,11 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: Text(
-          '青い大きめの太文字です。',
-          style: TextStyle(
-            color: Colors.blue,
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-          ),
+      body: Center(
+        child: Image.network(
+          'https://img-c.udemycdn.com/user/200_H/229920602_efad_4.jpg',
+          width: 300,
+          height: 300,
         ),
       ),
     );
