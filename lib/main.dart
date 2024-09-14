@@ -40,9 +40,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: const Center(
         child: Text(
-          '長い文章を入れた場合に、表示の列数を制限する方法を説明します。指定した行数で切ってくれます。長い文章を入れた場合に、表示の列数を制限する方法を説明します。指定した行数で切ってくれます。',
-          maxLines: 3,
-          overflow: TextOverflow.ellipsis,
+          '青い大きめの太文字です。',
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
