@@ -38,13 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(50.0),
-        child: Align(
-          alignment: Alignment.bottomRight,
-          child: Text('文章です。'),
-        ),
-      ),
+      body: Center(
+          child: TextButton(
+              onPressed: () {
+                // ここに押した時の処理を書きます。
+                print('押しました！');
+              },
+              child: const Text('押してね'))),
     );
   }
 }
