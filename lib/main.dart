@@ -38,11 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Image.asset(
-          'assets/n_jigen.jpg',
-          width: 300,
-          height: 300,
+      body: Container(
+        color: Colors.blue,
+        child: const Padding(
+          padding: EdgeInsets.all(24.0),
+          child: Text(
+            '長い文章を入れてみましょう！長い文章を入れてみましょう！長い文章を入れてみましょう！長い文章を入れてみましょう！長い文章を入れてみましょう！',
+          ),
         ),
       ),
     );
