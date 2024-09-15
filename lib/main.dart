@@ -38,14 +38,21 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(8.0),
-        child: ColoredBox(
-            color: Colors.cyan,
-            child: Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text('文章です。'),
-            )),
+      body: const Column(
+        children: [
+          ColoredBox(
+              color: Colors.red,
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text('文章です。'),
+              )),
+          ColoredBox(
+              color: Color.fromARGB(255, 255, 0, 0),
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text('文章です。'),
+              ))
+        ],
       ),
     );
   }
