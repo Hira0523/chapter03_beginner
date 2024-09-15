@@ -38,14 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Container(
-        color: Colors.blue,
-        child: const Padding(
-          padding: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
-          child: Text(
-            '長い文章を入れてみましょう！長い文章を入れてみましょう！長い文章を入れてみましょう！長い文章を入れてみましょう！長い文章を入れてみましょう！',
-          ),
-        ),
+      body: const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: ColoredBox(
+            color: Colors.cyan,
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text('文章です。'),
+            )),
       ),
     );
   }
