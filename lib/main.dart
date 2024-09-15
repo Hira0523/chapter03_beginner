@@ -40,6 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(
           child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14))),
               onPressed: () {
                 // ここに押した時の処理を記述します。
               },
