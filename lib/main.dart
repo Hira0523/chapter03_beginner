@@ -33,7 +33,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   void showRobotResult() {
-    String hand = 'パー';
+    List<String> hands = ['グー', 'チョキ', 'パー'];
+    hands.shuffle();
+    String hand = hands.first;
+
     showDialog(
         context: context,
         builder: (context) {
